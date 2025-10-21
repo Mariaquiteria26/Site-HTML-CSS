@@ -39,7 +39,7 @@ a:hover {
 }
 
 li {
-  margin: 20px;
+  margin: 0px 20px;
 }
 
 main {
@@ -81,10 +81,10 @@ main::before {
     src: url('Fontes/Muthiara\ demo\ version.otf') format('opentype');
 }
 
-icones img{
-    width: 40px;
+.icones img{
+    width: 10px;
     height: auto;
-    margin-left: 700px;
+    margin-left: 900px;
     margin-top: 20px;
 
 }
