@@ -7,27 +7,26 @@
 header {
     display: flex;
     align-items: center;
-    height: 85px;
-    width: 100vw;
+    justify-content: space-around;
+    height: 115px;
+    width: calc(100vw - 25px);
     background-color: rgb(255, 44, 188);
 }
+
 header img {
     width: 100px;
     height: auto;
-    margin-left: 100px;
-    margin-top: 10px;
     filter: grayscale(100%) brightness(0) invert(1); /*deixa a logo branca*/
 }
 
 ul { 
     list-style-type: none;
-    margin: 0 900px 0;
-    padding: 40x;
     display: flex;
-    justify-content: flex-end;
+    gap: 50px;
 }
 
 a {
+  font-family: verdana;
   color: white;
   text-decoration: none;
   font-size: 23px;
@@ -36,10 +35,6 @@ a {
 a:hover {
   color: rgb(255, 157, 230);
   text-decoration: underline;
-}
-
-li {
-  margin: 20px;
 }
 
 main {
@@ -63,6 +58,7 @@ h1 {
 }
 
 h3 {
+    font-family: Georgia;
     color: #ff0099;
     font-size: 40px;
     width: 700px;
@@ -76,15 +72,12 @@ main::before {
     height: 100%;
     background-color: #ff00c3;
 }
+
  @font-face {
     font-family:'Barbie';
     src: url('Fontes/Muthiara\ demo\ version.otf') format('opentype');
 }
 
-icones img{
+.icones {
     width: 40px;
-    height: auto;
-    margin-left: 700px;
-    margin-top: 20px;
-
 }

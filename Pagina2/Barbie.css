@@ -1,0 +1,93 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 115px;
+    width: calc(100vw - 25px);
+    background-color: rgb(255, 44, 188);
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    filter: grayscale(100%) brightness(0) invert(1);  /*deixa a logo branca*/
+}
+
+ul { 
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+a {
+  font-family:verdana;
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+a:hover {
+  color: rgb(255, 157, 230);
+  text-decoration: underline;
+}
+
+.icones {
+    width: 40px;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    font-size: 25px;
+}
+
+section h2 {
+    font-family: georgia;
+    font-size:  50px;
+    color: #ff00c3;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: rgb(255, 157, 230);
+    border-radius: 15px;            /*arredondar cantos*/
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.barbie-section {
+  display: flex;             
+  width: 100vw;
+  justify-content: space-between;   
+  align-items: center;    
+  padding: 0px 100px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  gap: 35px;
+}
+
+.barbie-section img {
+  max-width: 300px;          /* tamanho máximo da imagem */
+  border-radius: 15px;       /* cantinhos arredondados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra suave */
+}
