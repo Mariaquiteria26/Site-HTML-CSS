@@ -49,11 +49,21 @@ li:hover,.icone,header>img:hover {
     width: 40px;
 }
 
+.catalogo {
+    width: 100px;
+    height: 500px;
+}
+
 section {
     padding: 40px 20px;
     max-width: 1000px;
     margin: auto;
     font-size: 25px;
+}
+
+section > p {
+    margin-bottom: 30px;
+
 }
 
 section h2 {
