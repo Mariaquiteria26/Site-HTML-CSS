@@ -37,6 +37,14 @@ a:hover {
   text-decoration: underline;
 }
 
+li,.icones,header > img {
+    transition: 0.3 ease-in-out;
+}
+
+li:hover,.icone,header>img:hover {
+    transform: scale(1.14);
+}
+
 main {
 background-image: url(imagens/download.jpg);
 background-repeat: no-repeat;

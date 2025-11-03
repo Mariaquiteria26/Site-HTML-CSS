@@ -37,6 +37,14 @@ a:hover {
   text-decoration: underline;
 }
 
+li,.icones,header > img {
+    transition: 0.3 ease-in-out;
+}
+
+li:hover,.icone,header>img:hover {
+    transform: scale(1.14);
+}
+
 .icones {
     width: 40px;
 }
@@ -73,6 +81,11 @@ section h2 {
 .card img {
     width: 100%;
     border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.05);
 }
 
 .barbie-section {
@@ -90,4 +103,9 @@ section h2 {
   max-width: 300px;          /* tamanho máximo da imagem */
   border-radius: 15px;       /* cantinhos arredondados */
   box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra suave */
+  transition: 0.3s ease-in-out;
+}
+
+.barbie-section img:hover {
+  transform: scale(1.05);    /* efeito de zoom ao passar o mouse */
 }
