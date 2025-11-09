@@ -45,10 +45,6 @@ li:hover,.icone,header>img:hover {
     transform: scale(1.14);
 }
 
-.icones {
-    width: 40px;
-}
-
 .catalogo {
     width: 100px;
     height: 500px;

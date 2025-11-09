@@ -4,25 +4,48 @@
     box-sizing: border-box;
 }
 
-header {
+.nav-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 115px;
+    width: calc(100vw - 25px);
+    background-color: rgb(255, 44, 188);
+    margin-top: 250px;
+
+}
+
+.nav-secundaria {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 115px;
+    height: 80px;
     width: calc(100vw - 25px);
     background-color: rgb(255, 44, 188);
 }
 
-header img {
-    width: 100px;
-    height: auto;
-    filter: grayscale(100%) brightness(0) invert(1); /*deixa a logo branca*/
+.nav-secundaria h4 {
+    font-family: Geneva;
+    color: white;
+    font-size: 20px;
 }
+
+.separador { 
+    height: 25px;
+}
+
+.separador img {
+    height: 260px;
+    margin-left: 900px;
+    margin-top: 30px;
+}
+
 
 ul { 
     list-style-type: none;
     display: flex;
     gap: 50px;
+    
 }
 
 a {
@@ -46,19 +69,18 @@ li:hover,.icone,header>img:hover {
 }
 
 main {
-background-image: url(imagens/download.jpg);
-background-repeat: no-repeat;
-height: 100vh;
-background-position: center;
-background-size: cover;
-z-index: 3;
+    background-image: url(imagens/listrado\ rosa\ com\ fundo.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    z-index: 3;
 }
 
 h1 {
     color: rgb(255, 44, 188);
-    font-size: 100px;
-    border-bottom: 3px solid #ffffff;
-    margin-left: 100px;
+    font-size: 140px;
+    margin-left: 530px;
     display: inline-block;
     width: 900px;
     margin-top: 160px;
@@ -70,8 +92,25 @@ h3 {
     color: #ff0099;
     font-size: 40px;
     width: 700px;
-    margin-left: 100px;
+    margin-left: 554px;
     margin-top: 40px;
+}
+
+button {
+    margin-left: 554px;
+    margin-top: 70px;
+    padding: 20px 30px;
+    font-size: 30px;
+    background-color: rgb(255, 44, 188);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 main::before {
@@ -83,9 +122,19 @@ main::before {
 
  @font-face {
     font-family:'Barbie';
-    src: url('Fontes/Muthiara\ demo\ version.otf') format('opentype');
+    src: url('Fontes/Angelia\ Beauty.ttf') format('truetype');
 }
 
-.icones {
-    width: 40px;
+
+.foto-principal {
+    width: 500px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 100px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.home {
+    display: flex;
+
 }
