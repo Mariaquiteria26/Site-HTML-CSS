@@ -87,31 +87,3 @@ i {
     color: rgb(255, 255, 255);
     font-size: 20px;
 }
-
-.personagem {
-    display: flex;
-    width: 80%;
-    background-color: #ff00c3;
-    border-radius: 2px;
-    padding: 50px;
-    gap: 30px;
-}
-
-.personagem img {
-    width: 250px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.personagens {
-    display: flex;
-    flex-direction: column;
-    margin-top: 90px;
-    gap: 40px;
-    font-size: 30px;
-    align-items: center;
-    width: 100%;
-    font-family: georgia;
-    color: white;
-}
