@@ -11,7 +11,7 @@ html {
     align-items: center;
     justify-content: center;
     height: 115px;
-    width: calc(100vw);
+    width: calc(100vw - 15px);
     background-color: rgb(255, 44, 188);
 
 }
@@ -21,7 +21,7 @@ html {
     align-items: center;
     justify-content: center;
     height: 4px;
-    width: calc(100vw);
+    width: calc(100vw - 15px);
     background-color: rgb(255, 44, 188);
     padding: 40px 100px;
     top: 0;
@@ -70,7 +70,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
 li,
 i,
 .nav-principal>img {
@@ -88,37 +87,71 @@ i {
     font-size: 20px;
 }
 
-
 /* linha */
 
-section.filmes::before {
+.filmes {
+    width: calc(100vw - 15px);
+    height: 100%;
+    position: relative;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.filmes::after {
     content: "";
     position: absolute;
     left: 50%;
     top: 0;
+    bottom: 0;
     width: 3px;
     height: 100%;
-    top: 280px;
     background-color: rgb(255, 44, 188);
-    transform:translateX(-50%)
+    transform: translateX(-50%);
 }
 
+.filme {
+    position: relative;
+    width: 50%;
+    background: #f1f1f1;
+    border-radius: 6px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
 
 .filme::after {
     content: "";
-    position:absolute;
-    top:15px;
-    width: 14px;
-    height: 14px;
-    background-color: black;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 157, 230);
+    top: 50%;
     border-radius: 100%;
+    z-index: 1;
 }
 
-
 .esquerda {
-    left: -9.6%;
+    left: 0;
+    padding: 20px 50px 20px 20px;
 }
 
 .direita {
     left: 49.7%;
+    padding: 20px 50px 20px 50px;
+}
+
+.esquerda::after {right: -13px;}
+
+.direita::after {left: -10px;}
+
+.filmes img {height: 200px;}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3em;
+    gap: 20px;
 }
