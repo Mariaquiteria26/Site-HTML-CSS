@@ -83,12 +83,13 @@ i:hover,
 }
 
 .looks {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 50px;
+    display: flex;                 /* coloca os itens (botão – imagem – botão) lado a lado */
+    align-items: center;           /* alinha verticalmente no centro */
+    justify-content: center;       /* alinha horizontalmente no centro */
+    gap: 40px;                     /* espaço entre os itens */
+    margin-top: 50px;              /* separa do topo quando NÃO está absolute */
 }
+
 
 .img {
     width: 500px;
@@ -106,4 +107,42 @@ i {
     border-radius: 100%;
     background-color: rgb(255, 157, 230);
     border: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+}
+
+.armario {
+    position: relative; /* vira referência pro absolute ficar por cima dele */
+    width: 1500px; 
+    border-radius: 16px;
+    z-index: 1;          /* garante que ele fique atrás dos looks */
+}
+
+@font-face {
+    font-family:'Barbie';
+    src: url('Fontes/Angelia\ Beauty.ttf') format('truetype');
+}
+
+.center h1 {
+    position: absolute;
+    top: 280px;
+    font-family: Barbie;
+    font-size: 80px;
+    color: rgb(255, 44, 188);
+}
+
+
+.looks {
+    position: absolute;
+    top: 500px;
+    left: 800px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 2; /* fica por cima */
 }
