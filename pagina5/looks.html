@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profissões</title>
-    <link rel="stylesheet" href="profissoes.css">
+    <title>Roupas</title>
+    <link rel="stylesheet" href="looks.css">
+    <script src="looks.js" defer></script>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
 </head>
 <body>
-    <header> 
+    <header>
         <div class="nav-secundaria">
             <h4>O mundo da Barbie</h4>
         </div>
@@ -33,7 +34,15 @@
         </div>
     </header>
     <main>
-
+        <section class="looks">
+            <button class="btn" onclick="anterior()">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <img src="imagens/look1.png" alt="look1" class="img" id="img">
+            <button class="btn" onclick="proximo()">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+        </section>
     </main>
 </body>
 </html>

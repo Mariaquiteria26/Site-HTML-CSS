@@ -155,3 +155,18 @@ i {
     line-height: 1.3em;
     gap: 20px;
 }
+
+.infos p {
+    font-family: Verdana;
+    font-size: 18px;
+}
+
+.infos h2 {
+    font-family: Helvetica;
+    font-size: 28px;
+}
+
+.filmes h1 {
+    font-family: georgia;
+    font-size: 32px;
+}
