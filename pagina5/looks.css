@@ -82,16 +82,28 @@ i:hover,
     transform: scale(1.14);
 }
 
+.looks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.img {
+    width: 500px;
+    height: 600px;
+}
+
 i {
     color: rgb(255, 255, 255);
     font-size: 20px;
 }
 
-
 .btn {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 100%;
-    background-color: rgb(255, 157, 230);;
-
+    background-color: rgb(255, 157, 230);
+    border: none;
 }

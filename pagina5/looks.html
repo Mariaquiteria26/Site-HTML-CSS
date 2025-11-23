@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roupas</title>
     <link rel="stylesheet" href="looks.css">
-    <script src="looks.js" defer></script>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <div class="nav-secundaria">
@@ -44,5 +48,32 @@
             </button>
         </section>
     </main>
+
+    <script>
+        const imagens = [
+            "imagens/look1.png",
+            "imagens/look2.png",
+            "imagens/look3.png",
+            "imagens/look4.png",
+            "imagens/look5.png",
+            "imagens/look6.png"
+        ];
+
+        let indice = 0;
+
+        function atualizarImagem() {
+            document.getElementById("img").src = imagens[indice];
+        }
+
+        function proximo() {
+            indice = (indice + 1) % imagens.length;
+            atualizarImagem();
+        }
+
+        function anterior() {
+            indice = (indice - 1 + imagens.length) % imagens.length;
+            atualizarImagem();
+        }
+    </script>
 </body>
 </html>
