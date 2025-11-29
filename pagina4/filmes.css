@@ -120,6 +120,8 @@ i {
     gap: 20px;
     align-items: center;
     justify-content: center;
+    background-color: rgb(255, 156, 234);
+    box-shadow: 5px 5px 15px rgb(255, 111, 224);
 }
 
 .filme::after {
@@ -127,7 +129,7 @@ i {
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color: rgb(255, 157, 230);
+    background-color: rgb(255, 0, 200);
     top: 50%;
     border-radius: 100%;
     z-index: 1;
@@ -139,7 +141,7 @@ i {
 }
 
 .direita {
-    left: 49.7%;
+    left: 49.9%;
     padding: 20px 50px 20px 50px;
 }
 
@@ -159,14 +161,25 @@ i {
 .infos p {
     font-family: Verdana;
     font-size: 18px;
+    color: white;
 }
 
 .infos h2 {
     font-family: Helvetica;
-    font-size: 28px;
+    font-size: 26px;
+    color: rgb(255, 44, 188);
 }
 
-.filmes h1 {
-    font-family: georgia;
-    font-size: 32px;
+h1 {
+    text-align: center;
+    font-family: "Barbie";
+    font-size: 60px;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    color: rgb(255, 44, 188);
+}
+
+@font-face {
+    font-family:'Barbie';
+    src: url('Fontes/Angelia\ Beauty.ttf') format('truetype');
 }

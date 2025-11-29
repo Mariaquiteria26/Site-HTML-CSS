@@ -92,8 +92,8 @@ i:hover,
 
 
 .img {
-    width: 500px;
-    height: 600px;
+    width: 300px;
+    height: 500px;
 }
 
 i {
@@ -118,9 +118,12 @@ i {
 
 .armario {
     position: relative; /* vira referência pro absolute ficar por cima dele */
-    width: 1500px; 
+    width: 1200px; 
+    margin-top: 400px;
     border-radius: 16px;
     z-index: 1;          /* garante que ele fique atrás dos looks */
+    box-shadow: 5px 5px 15px #ff73dc;
+    margin-bottom: 300px;
 }
 
 @font-face {
@@ -130,17 +133,17 @@ i {
 
 .center h1 {
     position: absolute;
-    top: 280px;
+    top: 220px;
     font-family: Barbie;
-    font-size: 80px;
+    font-size: 60px;
     color: rgb(255, 44, 188);
 }
 
 
 .looks {
     position: absolute;
-    top: 500px;
-    left: 800px;
+    top: 450px;
+    left: 500px;
     display: flex;
     align-items: center;
     gap: 20px;

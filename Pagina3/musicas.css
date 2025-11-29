@@ -88,30 +88,84 @@ i {
     font-size: 20px;
 }
 
-.personagem {
-    display: flex;
+
+/* body */
+
+.titulo {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: "Barbie";
+    color: #ff00c3;;
+}
+
+
+.container {
     width: 80%;
-    background-color: #ff00c3;
-    border-radius: 16px;
-    padding: 50px;
-    gap: 30px;
-}
-
-.personagem img {
-    width: 250px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.personagens {
-    display: flex;
-    flex-direction: column;
-    margin-top: 90px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-    font-size: 30px;
+}
+
+
+.card {
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
     align-items: center;
+    gap: 25px;
+    height: 200px; 
+}
+
+
+.img img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;    /* mantém tudo do mesmo tamanho */
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px rgb(255, 233, 251);
+}
+
+
+.info h2 {
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: white;         
+    font-family: Arial, sans-serif;
+}
+
+
+audio {
     width: 100%;
-    font-family: georgia;
-    color: white;
+    height: 30px;
+    border-radius: 10px;
+}
+
+
+@font-face {
+    font-family:'Barbie';
+    src: url('fontes/Angelia\ Beauty.ttf') format('truetype');
+}
+
+.c1{
+    background-color: rgb(50, 191, 251);
+    box-shadow: 5px 5px 15px rgb(0, 166, 255);
+
+}
+
+.c2{
+    background-color: rgb(165, 69, 255);
+    box-shadow: 5px 5px 15px rgb(140, 16, 255) ;
+}
+
+.c3{
+    background-color: rgb(255, 173, 73);
+    box-shadow: 5px 5px 15px rgb(245, 150, 35)
+}
+
+.c4{
+    background-color: #f831ca;
+    box-shadow: 5px 5px 15px rgb(255, 44, 188)
 }
