@@ -1,6 +1,8 @@
-*  {
-    margin: 0;
-    padding: 0;
+*,
+body,
+html {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -9,7 +11,7 @@
     align-items: center;
     justify-content: center;
     height: 115px;
-    width: calc(100vw - 25px);
+    width: calc(100vw);
     background-color: rgb(255, 44, 188);
 
 }
@@ -17,10 +19,17 @@
 .nav-secundaria {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 80px;
-    width: calc(100vw - 25px);
+    justify-content: center;
+    height: 4px;
+    width: calc(100vw);
     background-color: rgb(255, 44, 188);
+    padding: 40px 100px;
+    top: 0;
+}
+
+.nav-principal div {
+    display: flex;
+    gap: 20px;
 }
 
 .nav-secundaria h4 {
@@ -29,122 +38,199 @@
     font-size: 20px;
 }
 
-.separador { 
+.nav-principal {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding: 0px 490px;
+    justify-content: space-between;
+    padding: 0px 100px;
 }
 
-.separador img {
-    height: 260px;
+.nav-principal img {
+    height: 80px;
+    filter: grayscale(100%) brightness(0) invert(1);
+    /*deixa a logo branca */
 }
 
-ul { 
+ul {
     list-style-type: none;
     display: flex;
     gap: 50px;
-    
+
 }
 
 a {
-  font-family: verdana;
-  color: white;
-  text-decoration: none;
-  font-size: 23px;
+    font-family: verdana;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
 }
 
 a:hover {
-  color: rgb(255, 157, 230);
-  text-decoration: underline;
+    color: rgb(255, 157, 230);
+    text-decoration: underline;
 }
 
-li,.icones,header > img {
-    transition: 0.3 ease-in-out;
+
+li,
+i,
+.nav-principal>img {
+    transition: 0.3s ease-in-out;
 }
 
-li:hover,.icone,header>img:hover {
+li:hover,
+i:hover,
+.nav-principal>img:hover {
     transform: scale(1.14);
 }
 
-main {
-    background-image: url(imagens/listrado\ rosa\ com\ fundo.png);
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    z-index: 3;
-}
-
-h1 {
-    color: rgb(255, 44, 188);
-    font-size: 140px;
-    /* margin-left: 530px; */
-    display: inline-block;
-    width: 900px;
-    /* margin-top: 160px; */
-    font-family:'Barbie';
-}
-
-h3 {
-    font-family: Georgia;
-    color: #ff0099;
-    font-size: 40px;
-    width: 700px;
-    /* margin-left: 554px;
-    margin-top: 40px; */
-}
-
-button {
-    margin-top: 70px;
-    padding: 20px 30px;
-    font-size: 30px;
-    background-color: rgb(255, 44, 188);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    transform: scale(1.05);
-}
-
-main::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: #ff00c3;
-}
-
- @font-face {
-    font-family:'Barbie';
-    src: url('Fontes/Angelia\ Beauty.ttf') format('truetype');
+i {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
 
-.foto-principal {
-    width: 500px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
 
-.home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 270px;
-    gap: 100px;
 
-}
-
-/* .home div {
-    margin-top: 100px;
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 } */
 
-i {
-    color: rgb(255, 44, 188);
-    margin-left: 60px;  
-    font-size: 2em;
+
+/* ===== capa ===== */
+.capa {
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffb6e6, #ffe3f5);
+    padding: 60px; 
+}
+
+.capa-infor img {
+    width: 500px;  
+    border-radius: 16px;    
+}
+
+.capa-infor {
+    display: flex;
+    gap: 200px;
+    align-items: center;
+}
+
+.capa h1 {
+  font-size: 60px;
+  font-family: 'Barbie';
+  white-space: nowrap;
+  color: rgb(255, 44, 188);
+}
+
+.capa p {
+  margin: 20px 0;
+  font-size: 16px;
+  color: white;
+}
+
+.capa button {
+  padding: 12px 24px;
+  border: none;
+  background: rgb(255, 44, 188);
+  color: hsl(0, 0%, 100%);
+  border-radius: 16px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  font-family: verdana;
+  
+}
+
+
+/* ===== HISTÓRIA ===== */
+.historia {
+  display: flex; 
+  background-color: rgb(255, 157, 230);
+  margin-top: 200px;
+  padding: 50px;
+  align-items: center;
+}
+
+.historia img{
+  width: 30%;
+  height: 10%;
+  border-radius: 20px;
+  box-shadow: 0 0 16px 8px rgb(254, 64, 206);
+  margin-top: 10%;
+}
+
+.sobrebarbie{
+    display: block;
+    color: white;
+}
+
+.historia h2 {
+  font-size: 4rem;
+  margin-top: 0;
+  text-align: center;
+  color: rgb(255, 44, 188);
+  font-family: 'Barbie';
+}
+
+.historia p {
+  font-family: Georgia;
+  font-size: 1.7rem;
+  width: 50%;
+  margin: 0 auto; 
+}
+
+
+/* ===== EVOLUÇÃO ===== */
+.evolucao {
+  padding: 80px;
+  text-align: center;
+}
+
+.evolucao h2 {
+  color: rgb(255, 44, 188);
+  margin-bottom: 40px;
+  font-family: 'Barbie';
+  font-size: 60px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.card {
+  width: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgb(255, 157, 230);
+  color: white;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 20px;
+  background: rgb(255, 44, 188);
+  color: white;
+  text-align: center;
+}
+
+
+@font-face {
+    font-family:'Barbie';
+    src: url('Fontes/Angelia\ Beauty.ttf') format('truetype');
 }
