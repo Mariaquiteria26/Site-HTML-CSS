@@ -90,7 +90,7 @@ i {
 
 
 
-/* ===== capa ===== */
+/* capa */
 .capa {
     height: 100vh;
     background: linear-gradient(to bottom, #ffb6e6, #ffe3f5);
@@ -141,7 +141,7 @@ i {
 
 
 
-/* ===== HISTÓRIA ===== */
+/* HISTÓRIA */
 .historia {
   display: flex; 
   background-color: rgb(255, 157, 230);
@@ -183,7 +183,7 @@ i {
 }
 
 
-/* ===== EVOLUÇÃO ===== */
+/* EVOLUÇÃO */
 .evolucao {
   padding: 80px;
   text-align: center;
@@ -241,6 +241,12 @@ footer p{
 }
 
 
+::selection {
+  background: rgb(255, 157, 230);
+  color: rgb(255, 0, 191);
+}
+
+
 @font-face {
     font-family:'Barbie';
     src: url('Fontes/Angelia\ Beauty.ttf') format('truetype');
@@ -250,3 +256,5 @@ footer p{
   font-family: redonda;
   src: url(Fontes/RobotoSlab-VariableFont_wght.ttf) format('truetype');
 }
+
+

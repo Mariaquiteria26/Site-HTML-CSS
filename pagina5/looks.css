@@ -176,3 +176,9 @@ footer a:hover {
     color: #ffe3f5;
     transform: scale(1.2);
 }
+
+
+::selection {
+  background: rgb(255, 157, 230);
+  color: rgb(255, 0, 191);
+}

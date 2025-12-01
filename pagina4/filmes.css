@@ -183,6 +183,12 @@ h1 {
     color: rgb(255, 44, 188);
 }
 
+
+::selection {
+  background: rgb(255, 157, 230);
+  color: rgb(255, 0, 191);
+}
+
 @font-face {
     font-family:'Barbie';
     src: url('Fontes/Angelia\ Beauty.ttf') format('truetype');

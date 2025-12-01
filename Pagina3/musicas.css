@@ -171,6 +171,12 @@ audio {
 }
 
 
+::selection {
+  background: rgb(255, 157, 230);
+  color: rgb(255, 0, 191);
+}
+
+
 @font-face {
   font-family: redonda;
   src: url(fontes/RobotoSlab-VariableFont_wght.ttf) format('truetype');

@@ -124,6 +124,12 @@ h2{
     font-family: georgia;
 }
 
+
+::selection {
+  background: rgb(255, 157, 230);
+  color: rgb(255, 0, 191);
+}
+
 .p1{
     background-color: #f831ca;
     box-shadow: 5px 5px 15px rgb(255, 139, 230);
