@@ -163,13 +163,13 @@ i {
 }
 
 .infos p {
-    font-family: redonda;
+    font-family: "redonda";
     font-size: 18px;
     color: white;
 }
 
 .infos h2 {
-    font-family: Helvetica;
+    font-family: georgia;
     font-size: 26px;
     color: rgb(255, 44, 188);
 }

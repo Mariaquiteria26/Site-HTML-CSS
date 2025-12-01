@@ -134,7 +134,7 @@ i {
 .center h1 {
     position: absolute;
     top: 220px;
-    font-family: Barbie;
+    font-family: "Barbie";
     font-size: 60px;
     color: rgb(255, 44, 188);
 }
