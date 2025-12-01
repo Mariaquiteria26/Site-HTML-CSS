@@ -133,7 +133,7 @@ i {
     margin: 0 0 15px;
     font-size: 20px;
     color: white;         
-    font-family: Arial, sans-serif;
+    font-family: redonda;
 }
 
 
@@ -168,4 +168,10 @@ audio {
 .c4{
     background-color: #f831ca;
     box-shadow: 5px 5px 15px rgb(255, 44, 188)
+}
+
+
+@font-face {
+  font-family: redonda;
+  src: url(fontes/RobotoSlab-VariableFont_wght.ttf) format('truetype');
 }

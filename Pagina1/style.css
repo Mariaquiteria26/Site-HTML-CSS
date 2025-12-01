@@ -90,15 +90,6 @@ i {
 
 
 
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-} */
-
-
 /* ===== capa ===== */
 .capa {
     height: 100vh;
@@ -108,12 +99,13 @@ i {
 
 .capa-infor img {
     width: 500px;  
-    border-radius: 16px;    
+    border-radius: 16px;
+    box-shadow: 0 0 16px 8px rgb(255, 134, 225);    
 }
 
 .capa-infor {
     display: flex;
-    gap: 200px;
+    gap: 100px;
     align-items: center;
 }
 
@@ -122,15 +114,18 @@ i {
   font-family: 'Barbie';
   white-space: nowrap;
   color: rgb(255, 44, 188);
+  text-shadow: 0 0 4px rgb(255, 255, 255) ;
 }
 
 .capa p {
-  margin: 20px 0;
-  font-size: 16px;
-  color: white;
+  margin: 20px 0 55px;
+  font-size: 25px;
+  color: rgb(255, 0, 174);
+  font-family: redonda;
+  text-shadow: 0 0 10px rgb(255, 253, 254);
 }
 
-.capa button {
+.botao {
   padding: 12px 24px;
   border: none;
   background: rgb(255, 44, 188);
@@ -139,9 +134,11 @@ i {
   cursor: pointer;
   width: 150px;
   height: 50px;
-  font-family: verdana;
-  
+  font-family: georgia;
+  font-size: 15px;
+  margin-top: 500px;
 }
+
 
 
 /* ===== HISTÓRIA ===== */
@@ -151,19 +148,18 @@ i {
   margin-top: 200px;
   padding: 50px;
   align-items: center;
+  min-height: 100vh;
 }
 
 .historia img{
   width: 30%;
   height: 10%;
-  border-radius: 20px;
-  box-shadow: 0 0 16px 8px rgb(254, 64, 206);
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .sobrebarbie{
-    display: block;
-    color: white;
+  display: block;
+  color: white;
 }
 
 .historia h2 {
@@ -172,13 +168,18 @@ i {
   text-align: center;
   color: rgb(255, 44, 188);
   font-family: 'Barbie';
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+
 }
 
 .historia p {
-  font-family: Georgia;
-  font-size: 1.7rem;
-  width: 50%;
+  text-align: center;
+  font-family: redonda;
+  font-size: 1.6rem;
+  width: 70%;
   margin: 0 auto; 
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgb(255, 0, 191);
 }
 
 
@@ -211,6 +212,8 @@ i {
 
 .card h3 {
   margin-bottom: 10px;
+  font-family: georgia;
+  text-shadow: 0 0 4px rgb(255, 0, 191);
 }
 
 .card img {
@@ -220,8 +223,12 @@ i {
   margin-bottom: 10px;
 }
 
+.card p{
+  font-family: redonda;
+}
 
-/* ===== FOOTER ===== */
+
+/* FOOTER */
 footer {
   padding: 20px;
   background: rgb(255, 44, 188);
@@ -229,8 +236,17 @@ footer {
   text-align: center;
 }
 
+footer p{
+  font-family: georgia;
+}
+
 
 @font-face {
     font-family:'Barbie';
     src: url('Fontes/Angelia\ Beauty.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: redonda;
+  src: url(Fontes/RobotoSlab-VariableFont_wght.ttf) format('truetype');
 }

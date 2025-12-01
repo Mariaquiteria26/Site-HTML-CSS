@@ -122,7 +122,7 @@ i {
     margin-top: 400px;
     border-radius: 16px;
     z-index: 1;          /* garante que ele fique atrás dos looks */
-    box-shadow: 5px 5px 15px #ff73dc;
+    box-shadow: 0 0 16px 8px #ff73dc;
     margin-bottom: 300px;
 }
 
@@ -148,4 +148,31 @@ i {
     align-items: center;
     gap: 20px;
     z-index: 2; /* fica por cima */
+}
+
+footer {
+    margin-top: 200px;
+    background: rgb(255, 44, 188);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+footer .redes {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    color: white;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffe3f5;
+    transform: scale(1.2);
 }

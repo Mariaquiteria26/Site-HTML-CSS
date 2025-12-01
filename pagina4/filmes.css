@@ -149,7 +149,11 @@ i {
 
 .direita::after {left: -10px;}
 
-.filmes img {height: 200px;}
+.filmes img {
+    height: 200px;
+    box-shadow: 0 0 16px 8px rgb(255, 130, 213);
+    border-radius: 16px;
+}
 
 .infos {
     display: flex;
@@ -159,7 +163,7 @@ i {
 }
 
 .infos p {
-    font-family: Verdana;
+    font-family: redonda;
     font-size: 18px;
     color: white;
 }
@@ -182,4 +186,9 @@ h1 {
 @font-face {
     font-family:'Barbie';
     src: url('Fontes/Angelia\ Beauty.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: redonda;
+  src: url(fontes/RobotoSlab-VariableFont_wght.ttf) format('truetype');
 }

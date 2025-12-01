@@ -101,7 +101,6 @@ i {
     width: 250px;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .personagens {
@@ -114,6 +113,15 @@ i {
     width: 100%;
     font-family: georgia;
     color: white;
+}
+
+p {
+    font-family: redonda;
+    font-size: 25px;
+}
+
+h2{
+    font-family: georgia;
 }
 
 .p1{
@@ -157,35 +165,40 @@ i {
 }
 
 .p1 img{
-    box-shadow: 5px 5px 15px rgb(255, 172, 234);
+    box-shadow: 0 0 16px 8px rgb(255, 172, 234);
 }
 
 .p2 img{
-    box-shadow: 5px 5px 15px rgb(154, 208, 255)
+    box-shadow: 0 0 16px 8px rgb(154, 208, 255)
 
 }
 
 .p3 img{
-    box-shadow: 5px 5px 15px rgb(211, 164, 255)
+    box-shadow: 0 0 16px 8px rgb(211, 164, 255)
 }
 
 .p4 img{
-    box-shadow: 5px 5px 15px rgb(255, 251, 205);
+    box-shadow: 0 0 16px 8px rgb(255, 251, 205);
 }
 
 .p5 img{
-    box-shadow: 5px 5px 15px rgb(255, 207, 245)
+    box-shadow: 0 0 16px 8px rgb(255, 207, 245)
 
 }
 
 .p6 img{
-    box-shadow: 5px 5px 15px rgb(255, 222, 160)
+    box-shadow: 0 0 16px 8px rgb(255, 222, 160)
 }
 
 .p7 img{
-    box-shadow: 5px 5px 15px rgb(186, 255, 190)
+    box-shadow: 0 0 16px 8px rgb(186, 255, 190)
 }
 
 .p8 img{
-    box-shadow: 5px 5px 15px rgb(255, 147, 147);
+    box-shadow: 0 0 16px 8px rgb(255, 147, 147);
+}
+
+@font-face {
+  font-family: redonda;
+  src: url(fontes/RobotoSlab-VariableFont_wght.ttf) format('truetype');
 }
