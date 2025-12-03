@@ -63,11 +63,15 @@ a {
     color: white;
     text-decoration: none;
     font-size: 23px;
+    transition: 0.3;
+    cursor: pointer;
+
 }
 
 a:hover {
     color: rgb(255, 157, 230);
     text-decoration: underline;
+    transform: scale(1.2);
 }
 
 li,
@@ -83,11 +87,11 @@ i:hover,
 }
 
 .looks {
-    display: flex;                 /* coloca os itens (botão – imagem – botão) lado a lado */
-    align-items: center;           /* alinha verticalmente no centro */
-    justify-content: center;       /* alinha horizontalmente no centro */
-    gap: 40px;                     /* espaço entre os itens */
-    margin-top: 50px;              /* separa do topo quando NÃO está absolute */
+    display: flex;                 
+    align-items: center;           
+    justify-content: center;      
+    gap: 40px;                  
+    margin-top: 50px;             
 }
 
 
@@ -107,6 +111,7 @@ i {
     border-radius: 100%;
     background-color: rgb(255, 157, 230);
     border: none;
+    cursor: pointer;
 }
 
 .center {
@@ -164,6 +169,7 @@ footer .redes {
     display: flex;
     justify-content: center;
     gap: 20px;
+    cursor: pointer;
 }
 
 footer a {

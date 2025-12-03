@@ -63,11 +63,14 @@ a {
     color: white;
     text-decoration: none;
     font-size: 23px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 a:hover {
     color: rgb(255, 157, 230);
     text-decoration: underline;
+    transform: scale(1.2);
 }
 
 
@@ -126,8 +129,8 @@ h2{
 
 
 ::selection {
-  background: rgb(255, 157, 230);
-  color: rgb(255, 0, 191);
+    background: rgb(255, 157, 230);
+    color: rgb(255, 0, 191);
 }
 
 .p1{
